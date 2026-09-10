@@ -232,6 +232,56 @@
     margin: 0 0 6px;
   }
   footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+  .bundle-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: var(--accent);
+    border-radius: 14px;
+    padding: 26px 28px;
+    margin: 0 0 36px;
+    box-shadow: var(--shadow);
+  }
+  .bundle-banner .bundle-text h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    margin: 0 0 6px;
+  }
+  .bundle-banner .bundle-text p {
+    font-size: 14.5px;
+    color: var(--accent-tint);
+    margin: 0;
+  }
+  .bundle-banner .bundle-price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: none;
+  }
+  .bundle-banner .bundle-was {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    color: rgba(255,255,255,0.6);
+    text-decoration: line-through;
+    font-size: 15px;
+  }
+  .bundle-banner .bundle-now {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-weight: 600;
+    color: #fff;
+    font-size: 22px;
+  }
+  .bundle-banner .buy {
+    background: #fff;
+    color: var(--accent-dark);
+  }
+  .bundle-banner .buy:hover { background: var(--accent-tint); }
+  @media (max-width: 640px) {
+    .bundle-banner { flex-direction: column; align-items: flex-start; }
+  }
 </style>
 
 <div class="page">
@@ -258,6 +308,19 @@
         </span>
       </div>
     </header>
+
+
+    <a class="bundle-banner" href="https://buy.polar.sh/polar_cl_lsmYVRe8Oml8RAvQTRXkw10YARHVrJR1UqcZu1wNt6e" target="_blank" rel="noopener" style="text-decoration:none;">
+      <div class="bundle-text">
+        <h2>Want all six? Get the Complete Bundle.</h2>
+        <p>Every template we sell, in one download &mdash; $37 worth for $22.</p>
+      </div>
+      <div class="bundle-price">
+        <span class="bundle-was">$37</span>
+        <span class="bundle-now">$22</span>
+        <span class="buy">Get the bundle <span aria-hidden="true">&rarr;</span></span>
+      </div>
+    </a>
 
     <section class="grid">
 
